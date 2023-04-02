@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
 * Студент: [Vlad Sypchenko](https://up.htmlacademy.ru/adaptive/28/user/1909339).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/id223468).
 
 ---
 
