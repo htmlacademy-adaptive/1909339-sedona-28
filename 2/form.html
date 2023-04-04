@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/1909339-sedona-28/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="introduce">
+      <div class="introduce__wrapper">
+        <img class="intoduce__image catalog-image" src="">
+        <div class="introduce__text">
+          <h1 class="introduce__text--header">Оставьте свой отзыв</h1>
+          <p class="introduce__text--description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях</p>
+        </div>
+      </div>
+    </section>
+    <section class="personal__data">
+      <h2 class="personal__data__heading">Представьтесь:</h2>
+      <p class="personal__data__item-heading">Имя:*</p>
+      <input class="personal__data__item-input" type="text" name="firstname" value="Пётр">
+      <p class="personal__data__item-heading">Фамилия:*</p>
+      <input class="personal__data__item-input" type="text" name="surname" value="Пустота">
+      <p class="personal__data__item-heading">Отчество:*</p>
+      <input class="personal__data__item-input" type="text" name="middlename" value="Викторович">
+    </section>
+    <section class="contact__data">
+      <h2 class="contact__data__heading">Контактная информация:</h2>
+      <p class="contact__data__item-heading">Контактный телефон:*</p>
+      <input class="contact__data__item-input contact-phone" type="text" name="phone" placeholder="Введите телефон">
+      <p class="contact__data__item-heading">Электронная почта:*</p>
+      <input class="contact__data__item-input contact-email" type="text" name="phone" placeholder="Введите e-mail">
+    </section>
+    <section class="impression">
+      <h2 class="impression__heading">Ваше общее впечатление:</h2>
+      <input class="impression__item-input" type="radio" checked>
+      <p class="impression__item-heading">Скорее положительное</p>
+      <input class="impression__item-input" type="radio">
+      <p class="impression__item-heading">Скорее отрицательное</p>
+      <input class="impression__item-input" type="radio">
+      <p class="impression__item-heading">Затрудняюсь ответить</p>
+    </section>
+    <section class="attractions">
+      <h2 class="attractions__heading">Посещенные достопримечательности:</h2>
+      <input class="attractions__item-checkbox" type="checkbox" checked>
+      <p class="attractions__item-heading">Мост Дьявола</p>
+      <input class="attractions__item-checkbox" type="checkbox" checked>
+      <p class="attractions__item-heading">Гора Колокол</p>
+      <input class="attractions__item-checkbox" type="checkbox" checked>
+      <p class="attractions__item-heading">Слайд-парк</p>
+      <input class="attractions__item-checkbox" type="checkbox">
+      <p class="attractions__item-heading">Красные скалы</p>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__heading">Опишите свои эмоции:</h2>
+      <input class="feedback__text" type="text" placeholder="Опишите подробно все свои восторги">
+      <button class="feedback__butto">Отправить отзыв</button>
+      <legend>* - Обязательные поля</legend>
+    </section>
+    <footer class="main-footer">
+      <div class="footer__wrapper">
+        <b class="footer__text">#VISITSEDONA</b>
+        <div class="footer__image-social">
+          <a href="" class="footer__image-social_link">
+            <img src="img/social/vk.svg" alt="VK" class="footer__image-social--vk" width="24" height="14">
+          </a>
+          <a href="" class="footer__image-social_link">
+            <img src="img/social/telegram.svg" alt="Telegram" class="footer__image-social--telegram" width="21" height="18">
+          </a>
+          <a href="" class="footer__image-social_link">
+            <img src="img/social/youtube.svg" alt="YouTube" class="footer__image-social--youtube" width="20" height="14">
+          </a>
+        </div>
+        <div class="footer__powered">
+          <p class="footer__powered-text">Разработано</p>
+          <img src="img/htmlacademy.svg" alt="Лого HTML Academy" class="footer__powered-logo" width="27" height="34">
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
