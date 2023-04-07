@@ -1,0 +1,68 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.adventures {
+  &__card__list {
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 400px;
+    text-align: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: #ffffff;
+
+    &-heading {
+      margin: 0;
+      padding-top: 52px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-number {
+      padding: 0;
+      margin: 0;
+    }
+
+    &-text {
+      padding: 0;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  &__image {
+    width: 800px;
+    padding: 0;
+  }
+
+  &__image-picture {
+    display: block;
+    // width: 800px;
+    // height: 256px;
+  }
+
+  &__card--icon {
+    color: #000000;
+  }
+}
+
+.highlighted--card {
+  background-color: #81b3d2;
+}
+
+.icon--gifts {
+  display: block;
+  margin: 0 auto;
+}
