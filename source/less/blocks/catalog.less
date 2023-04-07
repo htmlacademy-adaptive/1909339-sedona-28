@@ -1,0 +1,85 @@
+.catalog {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  &__item {
+    width: 400px;
+    height: 267px;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+
+    &-heading {
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    &-author {
+      margin: 0;
+      padding: 0;
+    }
+
+    &-like_button {
+      background: url("/img/like-icon.svg");
+      border: 0;
+      height: 21px;
+      width: 23px;
+      align-items: center;
+      margin-right: 9px;
+    }
+  }
+
+  &__item--info {
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,0.3);
+    // background-color: #000000;
+    // opacity: 0.3;
+
+    &-author {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      opacity: 1;
+    }
+
+    &-like {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+  }
+}
+
+.first--item {
+  background-image: url("/img/catalog/photo-2-desktop@2x.jpg");
+  background-size: cover;
+}
+
+.second--item {
+  background-image: url("/img/catalog/photo-3-desktop@2x.jpg");
+  background-size: cover;
+}
+
+.third--item {
+  background-image: url("/img/catalog/photo-4-desktop@2x.jpg");
+  background-size: cover;
+}
+
+.big--item {
+  background-image: url("/img/catalog/photo-1-desktop@2x.jpg");
+  background-size: cover;
+  width: 1200px;
+  height: 400px;
+}
