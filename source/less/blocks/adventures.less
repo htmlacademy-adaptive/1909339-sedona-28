@@ -23,9 +23,10 @@ li {
     box-sizing: border-box;
     color: #ffffff;
 
-    &-heading {
+    &--heading {
       margin: 0;
-      padding-top: 52px;
+      font-size: 21px;
+      line-height: 26px;
       font-weight: 700;
       text-transform: uppercase;
     }
@@ -35,10 +36,19 @@ li {
       margin: 0;
     }
 
-    &-text {
+    &--text {
       padding: 0;
       margin: 0;
       text-transform: uppercase;
+    }
+
+    &--icon {
+      height: 330px;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -49,20 +59,45 @@ li {
 
   &__image-picture {
     display: block;
-    // width: 800px;
-    // height: 256px;
-  }
-
-  &__card--icon {
-    color: #000000;
   }
 }
 
 .highlighted--card {
   background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.not-highlighted--card {
+  background-color: #EEEEEE;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 256px;
+}
+
+.icon--living {
+  width: 79.47px;
+  height: 72.4px;
+  display: block;
+  // margin: 0 auto;
+  // padding-top: 69px;
+}
+
+.icon--food {
+  width: 73.04px;
+  height: 68.9px;
+  display: block;
+  // margin: 0 auto;
+  // padding-top: 72px;
 }
 
 .icon--gifts {
+  width: 77.46px;
+  height: 72.02px;
   display: block;
-  margin: 0 auto;
+  // margin: 0 auto;
+  // padding-top: 69px;
 }
