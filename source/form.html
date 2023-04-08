@@ -4,61 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона – Форма</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
-    </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a href="#">Форма отзыва</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="main-nav__list--left">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+        <a class="main-header__logo">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
+        </a>
+        <div class="main-nav__list--right">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+        <span class="visually-hidden">
+          <button class="main-nav__toggle" type="button">
+            Открыть меню
+          </button>
+        </span>
       </div>
     </nav>
   </header>
   <main class="main-container">
-    <section class="introduce">
-      <div class="introduce__wrapper">
-        <img class="intoduce__image catalog-image" src="">
-        <div class="introduce__text">
-          <h1 class="introduce__text--header">Оставьте свой отзыв</h1>
-          <p class="introduce__text--description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях</p>
-        </div>
+    <section class="introduce introduce--catalog">
+      <img class="introduce__image--catalog" src="img/text-sedona.svg" width="460" height="80" alt="">
+    </section>
+    <section class="heading-text">
+      <h1 class="heading-text--header heading-text__catalog">Оставьте свой отзыв</h1><br>
+      <p class="heading-text--description heading-description--catalog">Помогите нашим отелям стать лучше! оставьте
+        отзыв о них,<br>а также о посещенных вами достопримечательностях</p>
+    </section>
+    <section class="personal-contacts">
+      <div class="personal__data">
+        <h2 class="personal__data__heading">Представьтесь:</h2>
+        <p class="personal__data__item-heading">Имя:*</p>
+        <input class="personal__data__item-input" type="text" name="firstname" value="Пётр">
+        <p class="personal__data__item-heading">Фамилия:*</p>
+        <input class="personal__data__item-input" type="text" name="surname" value="Пустота">
+        <p class="personal__data__item-heading">Отчество:*</p>
+        <input class="personal__data__item-input" type="text" name="middlename" value="Викторович">
       </div>
-    </section>
-    <section class="personal__data">
-      <h2 class="personal__data__heading">Представьтесь:</h2>
-      <p class="personal__data__item-heading">Имя:*</p>
-      <input class="personal__data__item-input" type="text" name="firstname" value="Пётр">
-      <p class="personal__data__item-heading">Фамилия:*</p>
-      <input class="personal__data__item-input" type="text" name="surname" value="Пустота">
-      <p class="personal__data__item-heading">Отчество:*</p>
-      <input class="personal__data__item-input" type="text" name="middlename" value="Викторович">
-    </section>
-    <section class="contact__data">
-      <h2 class="contact__data__heading">Контактная информация:</h2>
-      <p class="contact__data__item-heading">Контактный телефон:*</p>
-      <input class="contact__data__item-input contact-phone" type="text" name="phone" placeholder="Введите телефон">
-      <p class="contact__data__item-heading">Электронная почта:*</p>
-      <input class="contact__data__item-input contact-email" type="text" name="phone" placeholder="Введите e-mail">
+      <div class="contact__data-contacts">
+        <h2 class="personal__data__heading">Контактная информация:</h2>
+        <p class="personal__data__item-heading">Контактный телефон:*</p>
+        <input class="contact__data__item-input contact-phone" type="text" name="phone" placeholder="Введите телефон">
+        <p class="personal__data__item-heading">Электронная почта:*</p>
+        <input class="contact__data__item-input contact-email" type="text" name="phone" placeholder="Введите e-mail">
+      </div>
     </section>
     <section class="impression">
       <h2 class="impression__heading">Ваше общее впечатление:</h2>
@@ -94,10 +103,12 @@
             <img src="img/social/vk.svg" alt="VK" class="footer__image-social--vk" width="24" height="14">
           </a>
           <a href="" class="footer__image-social_link">
-            <img src="img/social/telegram.svg" alt="Telegram" class="footer__image-social--telegram" width="21" height="18">
+            <img src="img/social/telegram.svg" alt="Telegram" class="footer__image-social--telegram" width="21"
+              height="18">
           </a>
           <a href="" class="footer__image-social_link">
-            <img src="img/social/youtube.svg" alt="YouTube" class="footer__image-social--youtube" width="20" height="14">
+            <img src="img/social/youtube.svg" alt="YouTube" class="footer__image-social--youtube" width="20"
+              height="14">
           </a>
         </div>
         <div class="footer__powered">
