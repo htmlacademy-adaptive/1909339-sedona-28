@@ -1,1 +1,46 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+@import url(./blocks/main-header.less);
+@import url(./blocks/main-container.less);
+@import url(./blocks/introduce.less);
+@import url(./blocks/heading-text.less);
+@import url(./blocks/adventures.less);
+@import url(./blocks/conversion.less);
+@import url(./blocks/map.less);
+@import url(./blocks/main-footer.less);
+@import url(./blocks/catalog.less);
+@import url(./blocks/interested.less);
+@import url(./blocks/personal-contacts.less);
+@import url(./blocks/impression.less);
+@import url(./blocks/attractions.less);
+@import url(./blocks/feedback.less);

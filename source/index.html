@@ -4,133 +4,131 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона – Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="main-body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
-    </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a href="#">Главная</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#">Форма отзыва</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="main-nav__list--left">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+        <a class="main-header__logo">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
+        </a>
+        <div class="main-nav__list--right">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+        <span class="visually-hidden">
+          <button class="main-nav__toggle" type="button">
+            Открыть меню
+          </button>
+        </span>
       </div>
     </nav>
   </header>
   <main class="main-container">
     <section class="introduce">
-      <div class="introduce__wrapper">
-        <img class="intoduce__image main-image" src="img/text-index.png" width="901" height="389" alt="">
-        <div class="introduce__text">
-          <h1 class="introduce__text--header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="introduce__text--description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-      </div>
+      <img class="introduce__image" src="img/text-index.png" width="460" height="350" alt="">
+    </section>
+    <section class="heading-text">
+      <h1 class="heading-text--header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1><br>
+      <p class="heading-text--description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="adventures">
-      <div class="adventures__wrapper">
-        <ul class="adventures__card__list">
-          <li class="adventures__card highlighted--card">
-            <h2 class="adventures__card-heading">Настоящий городок</h2>
-            <p class="adventures__card-number">— №1 —</p>
-            <p class="adventures__card-text">Седона не таатракцион для туристов, там течет своя жизнь</p>
-          </li>
-          <li class="adventures__card adventures__image">
-            <img src="img/city@1x.png" alt="Мотель с флагами" class="adventures__image-picture">
-          </li>
-          <li class="adventures__card">
-            <img src="img/icons/house-icon.svg" alt="Домик" class="adventures__card--icon icon--living" height="40"
-              width="50">
-            <b class="adventures__card--heading">Жилье</b>
-            <p class="adventure__card--text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="adventures__card">
-            <img src="img/icons/food-icon.svg" alt="Бургер" class="adventures__card-icon icon--food" height="40"
-              width="40">
-            <b class="adventures__card--heading">Еда</b>
-            <p class="adventure__card--text">Всегда заказывайте Фирменный Бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="adventures__card">
-            <img src="img/icons/gift-icon.svg" alt="Подарочная коробка" class="adventures__card-icon icon--gifts"
-              width="40" height="40">
-            <b class="adventures__card-heading">Сувениры</b>
-            <p class="adventure__card-text">Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="adventures__card highlighted--card">
-            <h2 class="adventures__card-heading">Там есть мост дьявола</h2>
-            <p class="adventures__card-number">— №2 —</p>
-            <p class="adventures__card-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </li>
-          <div class="adventures__card adventures__image">
-            <img src="img/bridge@1x.png" alt="Горная дорога" class="adventures__image--picture" width="529" height="260">
-          </div>
-          <li class="adventures__card">
-            <h2 class="adventures__card--heading">Небольшая площадь</h2>
-            <p class="adventures__card-number">— №3 —</p>
-            <p class="adventures__card-text">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="adventures__card">
-            <h2 class="adventures__card--heading">Красивая дорога</h2>
-            <p class="adventures__card-number">— №4 —</p>
-            <p class="adventures__card-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="adventures__card">
-            <h2 class="adventures__card--heading">Мало туристов</h2>
-            <p class="adventures__card-number">— №5 —</p>
-            <p class="adventures__card-text">Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-      </div>
+      <ul class="adventures__card__list">
+        <li class="adventures__card highlighted--card">
+          <h2 class="adventures__card--heading">Настоящий<br>городок</h2><br>
+          <p class="adventures__card-number">— №1 —</p><br>
+          <p class="adventures__card--text">Седона не таатракцион для туристов, там течет своя жизнь</p>
+        </li>
+        <li class="adventures__card adventures__image">
+          <img src="img/photo-city@2x.jpg" alt="Мотель с флагами" class="adventures__image-picture" width="800"
+            height="256">
+        </li>
+        <li class="adventures__card adventures__card--icon">
+          <img src="img/icons/house-icon.svg" alt="Домик" class="icon--living" height="40" width="50"><br>
+          <b class="adventures__card--heading">Жилье</b><br>
+          <p class="adventures__card--text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li class="adventures__card adventures__card--icon">
+          <img src="img/icons/food-icon.svg" alt="Бургер" class="icon--food" height="40" width="40"><br>
+          <b class="adventures__card--heading">Еда</b><br>
+          <p class="adventures__card--text">Всегда заказывайте Фирменный Бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="adventures__card adventures__card--icon">
+          <img src="img/icons/gift-icon.svg" alt="Подарочная коробка" class="icon--gifts" width="40" height="40"><br>
+          <b class="adventures__card--heading">Сувениры</b><br>
+          <p class="adventures__card--text">Не только китайского, но и местного производства!</p>
+        </li>
+        <li class="adventures__card adventures__image">
+          <img src="img/photo-bridge@2x.jpg" alt="Горная дорога" class="adventures__image-picture" width="800"
+            height="256">
+        </li>
+        <li class="adventures__card highlighted--card">
+          <h2 class="adventures__card--heading">Там есть<br>мост дьявола</h2><br>
+          <p class="adventures__card-number">— №2 —</p><br>
+          <p class="adventures__card--text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </li>
+        <li class="adventures__card not-highlighted--card">
+          <h2 class="adventures__card--heading">Небольшая<br>площадь</h2><br>
+          <p class="adventures__card-number">— №3 —</p><br>
+          <p class="adventures__card--text">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="adventures__card not-highlighted--card">
+          <h2 class="adventures__card--heading">Красивая<br>дорога</h2><br>
+          <p class="adventures__card-number">— №4 —</p><br>
+          <p class="adventures__card--text">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+        </li>
+        <li class="adventures__card not-highlighted--card">
+          <h2 class="adventures__card--heading">Мало<br>туристов</h2><br>
+          <p class="adventures__card-number">— №5 —</p><br>
+          <p class="adventures__card--text">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
     </section>
-    <section class="convesion">
-      <div class="convesion__wrapper">
-        <h2 class="conversion__heading">Заинтересовались?</h2>
-          <p class="conversion__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-            в седоне</p>
-          <button class="conversion__button" type="button">Найти гостиницу</button>
-      </div>
+    <section class="conversion">
+      <h2 class="conversion__heading">Заинтересовались?</h2><br>
+      <p class="conversion__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц
+        в седоне</p>
+      <button class="conversion__button" type="button">Найти гостиницу</button>
     </section>
     <section class="map">
       <div class="map__wrapper">
-        <img src="img/map-mobile.png" alt="Карта Аризоны" class="map__image" width="320" height="350">
+        <img src="img/map-marker.svg" alt="Маркер" width="27" height="27">
       </div>
     </section>
     <footer class="main-footer">
-      <div class="footer__wrapper">
-        <b class="footer__text">#VISITSEDONA</b>
-        <div class="footer__image-social">
-          <a href="" class="footer__image-social_link">
-            <img src="img/social/vk.svg" alt="VK" class="footer__image-social--vk" width="24" height="14">
-          </a>
-          <a href="" class="footer__image-social_link">
-            <img src="img/social/telegram.svg" alt="Telegram" class="footer__image-social--telegram" width="21"
-              height="18">
-          </a>
-          <a href="" class="footer__image-social_link">
-            <img src="img/social/youtube.svg" alt="YouTube" class="footer__image-social--youtube" width="20"
-              height="14">
-          </a>
-        </div>
-        <div class="footer__powered">
-          <p class="footer__powered-text">Разработано</p>
-          <img src="img/htmlacademy.svg" alt="Лого HTML Academy" class="footer__powered-logo" width="27" height="34">
-        </div>
+      <b class="footer__text">#VISITSEDONA</b>
+      <div class="footer__image--social">
+        <a href="#" class="footer__image--social_link">
+          <img src="img/social/vk.svg" alt="VK" width="24" height="14">
+        </a>
+        <a href="#" class="footer__image--social_link">
+          <img src="img/social/telegram.svg" alt="Telegram" width="21" height="18">
+        </a>
+        <a href="#" class="footer__image--social_link">
+          <img src="img/social/youtube.svg" alt="YouTube" width="20" height="14">
+        </a>
+      </div>
+      <div class="footer__powered">
+        <p class="footer__powered-text">Разработано</p>
+        <img src="img/htmlacademy.svg" alt="Лого HTML Academy" class="footer__powered-logo" width="27" height="34">
       </div>
     </footer>
   </main>
