@@ -1,0 +1,49 @@
+.impression {
+  padding-bottom: 56px;
+
+  &__heading {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  &__item-heading {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-left: 16px;
+  }
+
+  &__items {
+    display: flex;
+    width: 960px;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    &-spot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item-input {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.impression__items-spot input[type=radio] {
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.impression__items-spot input[type=radio]:focus-visible {
+  outline-offset: 0;
+}

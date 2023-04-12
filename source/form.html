@@ -71,50 +71,68 @@
     </section>
     <section class="impression">
       <h2 class="impression__heading">Ваше общее впечатление:</h2>
-      <input class="impression__item-input" type="radio" checked>
-      <p class="impression__item-heading">Скорее положительное</p>
-      <input class="impression__item-input" type="radio">
-      <p class="impression__item-heading">Скорее отрицательное</p>
-      <input class="impression__item-input" type="radio">
-      <p class="impression__item-heading">Затрудняюсь ответить</p>
+      <form class="impression__items">
+        <div class="impression__items-spot">
+          <input type="radio" id="impression1" name="impression" checked>
+          <label class="impression__item-heading" for="impression1">Скорее положительное</label>
+        </div>
+        <div class="impression__items-spot">
+          <input type="radio" id="impression2" name="impression">
+          <label class="impression__item-heading" for="impression2">Скорее отрицательное</label>
+        </div>
+        <div class="impression__items-spot">
+          <input type="radio" id="impression3" name="impression">
+          <label class="impression__item-heading" for="impression3">Затрудняюсь ответить</label>
+        </div>
+      </form>
     </section>
     <section class="attractions">
-      <h2 class="attractions__heading">Посещенные достопримечательности:</h2>
-      <input class="attractions__item-checkbox" type="checkbox" checked>
-      <p class="attractions__item-heading">Мост Дьявола</p>
-      <input class="attractions__item-checkbox" type="checkbox" checked>
-      <p class="attractions__item-heading">Гора Колокол</p>
-      <input class="attractions__item-checkbox" type="checkbox" checked>
-      <p class="attractions__item-heading">Слайд-парк</p>
-      <input class="attractions__item-checkbox" type="checkbox">
-      <p class="attractions__item-heading">Красные скалы</p>
+      <h2 class="attractions__heading">Посещенные<br>достопримечательности:</h2>
+      <form action="" class="attractions__items">
+        <div class="attractions__item">
+          <input class="attractions__item-checkbox" type="checkbox" checked>
+          <p class="attractions__item-heading">Мост Дьявола</p>
+        </div>
+        <div class="attractions__item">
+          <input class="attractions__item-checkbox" type="checkbox" checked>
+          <p class="attractions__item-heading">Гора Колокол</p>
+        </div>
+        <div class="attractions__item">
+          <input class="attractions__item-checkbox" type="checkbox" checked>
+          <p class="attractions__item-heading">Слайд-парк</p>
+        </div>
+        <div class="attractions__item">
+          <input class="attractions__item-checkbox" type="checkbox">
+          <p class="attractions__item-heading">Красные скалы</p>
+        </div>
+      </form>
     </section>
     <section class="feedback">
       <h2 class="feedback__heading">Опишите свои эмоции:</h2>
-      <input class="feedback__text" type="text" placeholder="Опишите подробно все свои восторги">
-      <button class="feedback__butto">Отправить отзыв</button>
-      <legend>* - Обязательные поля</legend>
+      <div class="feedback__wrapper">
+        <input class="feedback__text" type="text" placeholder="Опишите подробно все свои восторги">
+        <div class="feedback__button-wrapper">
+          <button class="feedback__button">Отправить отзыв</button>
+          <legend class="feedback__legend">* - Обязательные поля</legend>
+        </div>
+      </div>
     </section>
     <footer class="main-footer">
-      <div class="footer__wrapper">
-        <b class="footer__text">#VISITSEDONA</b>
-        <div class="footer__image-social">
-          <a href="" class="footer__image-social_link">
-            <img src="img/social/vk.svg" alt="VK" class="footer__image-social--vk" width="24" height="14">
-          </a>
-          <a href="" class="footer__image-social_link">
-            <img src="img/social/telegram.svg" alt="Telegram" class="footer__image-social--telegram" width="21"
-              height="18">
-          </a>
-          <a href="" class="footer__image-social_link">
-            <img src="img/social/youtube.svg" alt="YouTube" class="footer__image-social--youtube" width="20"
-              height="14">
-          </a>
-        </div>
-        <div class="footer__powered">
-          <p class="footer__powered-text">Разработано</p>
-          <img src="img/htmlacademy.svg" alt="Лого HTML Academy" class="footer__powered-logo" width="27" height="34">
-        </div>
+      <b class="footer__text">#VISITSEDONA</b>
+      <div class="footer__image--social">
+        <a href="#" class="footer__image--social_link">
+          <img src="img/social/vk.svg" alt="VK" width="24" height="14">
+        </a>
+        <a href="#" class="footer__image--social_link">
+          <img src="img/social/telegram.svg" alt="Telegram" width="21" height="18">
+        </a>
+        <a href="#" class="footer__image--social_link">
+          <img src="img/social/youtube.svg" alt="YouTube" width="20" height="14">
+        </a>
+      </div>
+      <div class="footer__powered">
+        <p class="footer__powered-text">Разработано</p>
+        <img src="img/htmlacademy.svg" alt="Лого HTML Academy" class="footer__powered-logo" width="27" height="34">
       </div>
     </footer>
   </main>
